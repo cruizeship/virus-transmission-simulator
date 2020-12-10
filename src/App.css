@@ -1,0 +1,385 @@
+body {
+  background: white;
+}
+
+#canvas-container {
+  border: 2px solid lightgray;
+  float: left;
+  position: relative;
+  background-color: white;
+}
+
+#main-canvas {
+  vertical-align: bottom;
+  margin: -1px;
+}
+
+#canvas-container:hover .control-button-container {
+  display: block;
+}
+
+.number-input {
+  text-align: left;
+  width: 60px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 1px;
+}
+
+.number-input:focus::placeholder {
+  color: transparent;
+}
+
+.range-slider {
+  height: 10px;
+}
+
+/*classname::-webkit-inner-spin-button*/
+/*classname:hover::-webkit-inner-spin-button*/
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+  color: gray;
+  background-color: lightgray;
+}
+
+.setting-name {
+  display: inline;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.setting-container {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 400px;
+  position: relative;
+}
+
+.input-container {
+  position: absolute;
+  right: 20px;
+}
+
+.sidebar-container {
+  vertical-align: bottom;
+  border: 2px solid lightgray;
+  width: 400px;
+  height: 500px;
+  float: left;
+  text-align: left;
+  margin-left: 10px;
+  position: relative;
+  background-color: white;
+}
+
+#all {
+  margin-top: 100px;
+  width: 1218px;
+  display: inline-block;
+  position: relative;
+}
+
+#center {
+  text-align: center;
+  padding-bottom: 280px;
+}
+
+.info-icon {
+  margin-left: 5px;
+  vertical-align: bottom;
+  font-size: 20px;
+  color: rgb(73, 93, 204);
+}
+
+.info-container {
+  position: absolute;
+  border: 2px solid lightgray;
+  background-color: white;
+  color: black;
+  left: 240px;
+  margin-top: -30px;
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.info-icon:hover {
+  cursor: pointer;
+}
+
+.info-arrow {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-left: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  transform: rotate(45deg);
+  float: left;
+  margin-left: -9.9px;
+  border-radius: 2px;
+  margin-top: 10.5px;
+}
+
+.info-title {
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.info-text {
+  margin-left: 7px;
+  font-size: 14px;
+  margin-top: 1px;
+  padding-right: 7px;
+}
+
+.info-close {
+  right: 6px;
+  top: 4px;
+  position: absolute;
+  font-size: 12px;
+  color: lightgray;
+}
+
+.info-close:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.sidebar-title {
+  text-align: center;
+}
+
+.reset-setting-button {
+  border-radius: 0;
+  border-top: 2px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: none;
+  border-left: none;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  width: 200px;
+  height: 45px;
+  background-color: white;
+  outline: none;
+}
+
+.reset-setting-button:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.reset-icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.reset-text {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.other-setting-button {
+  border-radius: 0;
+  border-top: 2px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-bottom: none;
+  border-right: none;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  width: 200px;
+  height: 45px;
+  background-color: white;
+  outline: none;
+}
+
+.other-setting-button:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.sidebar-info-icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.sidebar-arrow-icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+#start-screen {
+  position: absolute;
+  top: 0;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+}
+
+.big-play-button:hover {
+  cursor: pointer;
+  color: rgb(50, 50, 50);
+  font-size: 85px;
+  margin-top: 180px;
+}
+
+.big-play-button {
+  margin-top: 185px;
+  font-size: 75px;
+}
+
+.start-text:hover {
+  cursor: pointer;
+  color: rgb(50, 50, 50);
+}
+
+.start-text {
+  position: absolute;
+  left: 335px;
+  bottom: 175px;
+}
+
+.small-play-pause-button {
+  background-color: white;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-left: 25px;
+}
+
+.small-play-pause-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.small-restart-button {
+  background-color: white;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 5px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.small-restart-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.control-button-container {
+  padding-bottom: 2.5px;
+  padding-top: 2.5px;
+  display: none;
+  width: 800px;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  background-image: linear-gradient(to right, rgba(195, 195, 195, 0.85) , rgba(0, 0, 0, 0));
+}
+
+.return-setting-button {
+  border-radius: 0;
+  border-top: 2px solid lightgray;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  width: 400px;
+  height: 45px;
+  background-color: white;
+  outline: none;
+}
+
+.return-setting-button:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.stat-bar {
+  width: 400px;
+  border: 2px solid lightgray;
+  position: absolute;
+  top: 514px;
+  right: 0px;
+  height: 170px;
+  background-color: white;
+}
+
+.stat-box {
+  width: 380px;
+  border: 2px solid lightgray;
+  margin-top: -2px;
+  margin-left: 8px;
+}
+
+.stat-name {
+  border-right: 2px solid lightgray;
+  width: 300px;
+  float: left;
+  height: 20px;
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+.stat-num {
+  display: inline-block;
+  height: 20px;
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+.statbar-title {
+  text-align: center;
+}
+
+.other-box {
+  position: absolute;
+  top: 514px;
+  width: 800px;
+  border: 2px solid lightgray;
+  height: 170px;
+  background-color: rgb(240, 240, 240);
+}
+
+.settings-title {
+  width: 380px; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+} 
+
+.settings-title-span { 
+  background:#fff; 
+  padding: 0 10px; 
+}
+
+#side-canvas {
+  margin-left: 10px;
+  border: 2px solid lightgray;
+}
+
+#key-container {
+  position: absolute;
+  width: 225px;
+  height: 380px;
+  border: 2px solid lightgray;
+  margin-left: -2px;
+  text-align: center;
+}
